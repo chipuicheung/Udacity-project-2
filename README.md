@@ -15,9 +15,16 @@ Each turn:
 The game ends once all cards have been correctly matched.
 
 ### Game Functionality
-The real-life game, players flip over cards to locate the pairs that match The goal is to recreate this effect in your project. There are a couple of interactions that you'll need to handle:
+The functionality includes: 
 
-- Flipping cards
-- What happens when cards match
-- What happens when cards do not match
-- When the game finishes
+- Flipping over of the cards
+- When two cards are flipped, check if they match.
+  If they match: great! They will remain open and green + store in an array of matched cards.
+  If they don't match: flip back.
+- The timer will start when the first move was made.  
+- When you made 20 moves, one star will disappear.
+- When you made 40 moves, the second star will disappear. 
+- One star will always remain.
+- When all pairs are found, a modal pops up with the amount of moves, time played and stars left. 
+
+In the modal there's a CTA to play again which will restart the game.
