@@ -144,6 +144,7 @@ function match() {
 	matchedCards.push(flippedCard[0]);
 	matchedCards.push(flippedCard[1]);
 	flippedCard = [];
+	console.log('Matched cards: ' + matchedCards.length);
 };
 
 function noMatch() {
@@ -185,8 +186,8 @@ let timeStats = document.querySelector('.timeStats');
 let movesStats = document.querySelector('.movesStats');
 let starsStats = document.querySelector('.starsStats');
 
-
-if (matchedCards.length === allCards.length) { 
+if (matchedCards.length === 16) { 
+	stopTime();
 	win();
 }
 
@@ -209,6 +210,7 @@ function showModal() {
 function closeModal() {
 		modal.style.display = "none";
 }
+
 modalClose.addEventListener('click', closeModal);
 
 playAgain.addEventListener('click', function() {
