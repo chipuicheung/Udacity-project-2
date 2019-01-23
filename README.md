@@ -27,4 +27,4 @@ The functionality includes:
 - One star will always remain.
 - When all pairs are found, a modal pops up with the amount of moves, time played and stars left. 
 
-In the modal there's a CTA to play again which will restart the game.
+In the modal there's a button to play again which will restart the game.
