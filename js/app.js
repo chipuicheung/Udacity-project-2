@@ -1,5 +1,3 @@
-// function to reset/start game
-
 // Create a list that holds all of your cards
 let card = document.querySelectorAll(".card");
 const allCards = [...card];
@@ -129,10 +127,8 @@ flippedCard = [];
 function matchCards() {
 	if (flippedCard[0].innerHTML === flippedCard[1].innerHTML) {
 			match();
-			console.log('match');
 		} else {
 			noMatch();
-			console.log("try again");
 		}
 	}				
 
@@ -144,7 +140,6 @@ function match() {
 	matchedCards.push(flippedCard[0]);
 	matchedCards.push(flippedCard[1]);
 	flippedCard = [];
-	console.log('Matched cards: ' + matchedCards.length);
 	checkMatch();
 };
 
