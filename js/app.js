@@ -145,6 +145,7 @@ function match() {
 	matchedCards.push(flippedCard[1]);
 	flippedCard = [];
 	console.log('Matched cards: ' + matchedCards.length);
+	checkMatch();
 };
 
 function noMatch() {
@@ -186,10 +187,12 @@ let timeStats = document.querySelector('.timeStats');
 let movesStats = document.querySelector('.movesStats');
 let starsStats = document.querySelector('.starsStats');
 
-if (matchedCards.length === 16) { 
-	stopTime();
+function checkMatch() {
+	if (matchedCards.length === 16) { 
 	win();
+	}
 }
+
 
 function win() {
 	stopTime();
