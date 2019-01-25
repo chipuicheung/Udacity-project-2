@@ -140,7 +140,7 @@ function match() {
 	matchedCards.push(flippedCard[0]);
 	matchedCards.push(flippedCard[1]);
 	flippedCard = [];
-	checkMatch();
+	setTimeout(checkMatch, 1000);
 };
 
 function noMatch() {
@@ -148,7 +148,7 @@ function noMatch() {
 	flippedCard[0].classList.remove('open', 'show');
 	flippedCard[1].classList.remove('open', 'show');
 	flippedCard = [];
-		}, 700);
+		}, 800);
 };	
 
 
